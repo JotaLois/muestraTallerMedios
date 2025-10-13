@@ -1,0 +1,317 @@
+body{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.encabezadoPrincipal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo{
+  width: 200px;
+  height: auto;
+  margin: 0.5rem;
+}
+.logoB{
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+
+.videoHome{
+  width: 360px;
+  height: auto;
+  box-shadow: grey 5px 5px 5px;
+  border-radius: 5px;
+}
+
+section{
+  box-shadow: rgb(201, 200, 200) 5px 5px 10px ;
+  margin: 15px;
+  padding: 15px;
+}
+
+.tituloTaller{
+  width: 350px;
+  height: auto;
+  margin: 5px;
+  padding: 0px;
+}
+
+.divCopete{
+  max-width: 720px; /* o lo que pese tu video */
+  margin: 0 auto;
+  padding: 0 25px 20px 0; /* un pequeño padding lateral para márgenes en pantallas chicas */
+  padding-bottom: 30px;
+}
+
+.subtitulos{
+  color:#8f0a4b;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+  margin-top: 0px;
+}
+
+.copeteVideos{
+  color: #8f0a4b;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+}
+
+.gif{
+  width: 200px;
+  height: auto;
+}
+
+.contenedor_gif{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 35px;
+}
+
+
+.video-container {
+  position: relative;     /* Necesario para el iframe absoluto */
+  width: 100%;            /* Ocupa todo el ancho del contenedor padre */
+  max-width: 560px;       /* Limita tamaño en desktop */
+  padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+  height: 0;              /* Para que el padding defina la altura */
+}
+
+.video-container iframe {
+  position: absolute;     /* Se coloca dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;            /* Se adapta al contenedor */
+  height: 100%;           /* Se adapta al contenedor */
+}
+  
+.lista{
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: end;
+  padding: 20px;
+}
+
+.lista li{
+  list-style: none;
+  box-shadow: rgb(142, 148, 151)2px 2px 5px;
+  /*padding: 3px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.lista li a img {
+  transition: transform 0.3s ease;
+    
+}
+
+.lista li a img:hover{
+  transform: scale(1.5);
+}
+
+
+
+.autores{
+  color: #695e64;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style:normal;
+  font-size: larger;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  }
+
+.autoresDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-bottom: 10px;
+  width: 560px;
+  height: auto;
+  max-width: 90%;
+}
+
+.autoresDiv ul{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+
+.autoresDiv ul li{
+  list-style: none;
+  color: #474044;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-style:normal;
+  font-size: larger; 
+  margin: 10px 10px 10px 0px;
+  text-align: start;
+  }
+
+button{
+  color: rgb(33, 94, 147);
+  background-color: rgba(240, 243, 246, 0.959);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 7px rgba(227, 236, 246, 0.421);
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style:normal;
+  font-size: medium;  
+  }
+
+footer{
+  color: #8f0a4b;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-style:normal;
+  font-size: smaller;
+  margin-top: 20px;
+  text-align: center;
+  }
+
+
+.estilo_opciones{
+  width: 250px;
+  height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* Estilos para pantallas con ancho máximo de 768px */
+
+    body{
+        margin: 0.5rem;
+    }
+    .lista{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .btnMenuA{
+    width:70vw;
+    height: auto;
+    }
+        
+    .btnMenuB{
+    width: 35vw;
+    height: auto;
+    }
+
+    .lista li a img:hover{
+        transform: scale(1.2);
+        
+    }
+    .lista li{
+        margin: 0.5rem;
+    }
+    .btnMenu:active{
+        transform: scale(0.95);
+        
+    }
+
+    body{
+        margin-top: 3rem;
+   
+  }
+
+  .encabezadoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section{
+    width: 90%;
+    height: auto;
+  }
+  
+.video-container {
+  position: relative;     /* Necesario para el iframe absoluto */
+  width: 100%;            /* Ocupa todo el ancho del contenedor padre */
+  max-width: 560px;       /* Limita tamaño en desktop */
+  padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+  height: 0;              /* Para que el padding defina la altura */
+}
+
+.video-container iframe {
+  position: absolute;     /* Se coloca dentro del contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;            /* Se adapta al contenedor */
+  height: 100%;           /* Se adapta al contenedor */
+}
+
+
+  .autores{
+    color: #8f0a4b;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+    font-size: larger;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .autoresDiv{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+  .autoresDiv ul li{
+    list-style: none;
+    color: #8f0a4b;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: larger;
+    max-width: 90%;
+    
+  }
+  .autoresDiv ul {
+    max-width: 90%;
+  }
+
+  footer{
+    color: #8f0a4b;
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-style:normal;
+    font-size: smaller;
+    margin-top: 4rem;
+    text-align: center;
+  
+  }
+      
+}
