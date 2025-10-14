@@ -25,7 +25,7 @@ body{
 }
 
 .videoHome{
-  width: 1080px;
+  width: 60%;
   height: auto;
   box-shadow: grey 5px 5px 5px;
   border-radius: 5px;
@@ -223,7 +223,7 @@ footer{
   }
 
   .videoHome{
-    width: 480px;
+    width: 95%;
     height: auto;
   }
 
