@@ -6,6 +6,7 @@ body{
   margin: 10px;
 }
 
+/*Index*/
 .encabezadoPrincipal {
   display: flex;
   flex-direction: row;
@@ -18,9 +19,9 @@ body{
   margin: 0.5rem;
 }
 .logoB{
-  width: 200px;
+  width: 400px;
   height: auto;
-  margin: 10px;
+  margin: 5px;
 }
 
 .videoHome{
@@ -30,17 +31,24 @@ body{
   border-radius: 5px;
 }
 
-section{
-  box-shadow: rgb(201, 200, 200) 5px 5px 10px ;
-  margin: 15px;
-  padding: 15px;
-}
-
 .tituloTaller{
   width: 350px;
   height: auto;
   margin: 5px;
   padding: 0px;
+}
+
+.estilo_opciones{
+  width: 250px;
+  height: auto;
+}
+
+/*paginas*/
+
+section{
+  box-shadow: rgb(201, 200, 200) 5px 5px 10px ;
+  margin: 15px;
+  padding: 15px;
 }
 
 .divCopete{
@@ -78,7 +86,6 @@ section{
   align-items: center;
   margin-right: 35px;
 }
-
 
 .video-container {
   position: relative;     /* Necesario para el iframe absoluto */
@@ -124,8 +131,6 @@ section{
   transform: scale(1.5);
 }
 
-
-
 .autores{
   color: #695e64;
   text-decoration: none;
@@ -170,18 +175,10 @@ section{
   text-align: start;
   }
 
-button{
-  color: rgb(33, 94, 147);
-  background-color: rgba(240, 243, 246, 0.959);
-  border-radius: 5px;
-  padding: 5px;
-  margin-bottom: 1rem;
-  box-shadow: 1px 1px 7px rgba(227, 236, 246, 0.421);
-  font-family: "Jost", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style:normal;
-  font-size: medium;  
+  .autoresDiv .autores-largo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
 footer{
@@ -195,51 +192,34 @@ footer{
   text-align: center;
   }
 
-
-.estilo_opciones{
-  width: 250px;
-  height: auto;
-}
-
+/*-----------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
     /* Estilos para pantallas con ancho máximo de 768px */
 
-    body{
-        margin: 0.5rem;
-    }
-    .lista{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0px;
-    }
-
-    .btnMenuA{
-    width:70vw;
+  body{
+      margin: 0.5rem;
+      margin-top: 3rem;  
+  }
+  .lista{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+  }
+          
+  .lista li a img:hover{
+      transform: scale(1.2);
+      
+  }
+  .lista li{
+      margin: 0.5rem;
+  }
+  
+  .logoB{
+    width: 200px;
     height: auto;
-    }
-        
-    .btnMenuB{
-    width: 35vw;
-    height: auto;
-    }
-
-    .lista li a img:hover{
-        transform: scale(1.2);
-        
-    }
-    .lista li{
-        margin: 0.5rem;
-    }
-    .btnMenu:active{
-        transform: scale(0.95);
-        
-    }
-
-    body{
-        margin-top: 3rem;
-   
+    margin: 2px;
   }
 
   .encabezadoPrincipal{
@@ -253,25 +233,24 @@ footer{
     height: auto;
   }
   
-.video-container {
-  position: relative;     /* Necesario para el iframe absoluto */
-  width: 100%;            /* Ocupa todo el ancho del contenedor padre */
-  max-width: 560px;       /* Limita tamaño en desktop */
-  padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
-  height: 0;              /* Para que el padding defina la altura */
-}
+  .video-container {
+    position: relative;     /* Necesario para el iframe absoluto */
+    width: 100%;            /* Ocupa todo el ancho del contenedor padre */
+    max-width: 560px;       /* Limita tamaño en desktop */
+    padding-bottom: 56.25%; /* Mantiene proporción 16:9 */
+    height: 0;              /* Para que el padding defina la altura */
+  }
 
-.video-container iframe {
-  position: absolute;     /* Se coloca dentro del contenedor */
-  top: 0;
-  left: 0;
-  width: 100%;            /* Se adapta al contenedor */
-  height: 100%;           /* Se adapta al contenedor */
-}
-
+  .video-container iframe {
+    position: absolute;     /* Se coloca dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;            /* Se adapta al contenedor */
+    height: 100%;           /* Se adapta al contenedor */
+  }
 
   .autores{
-    color: #8f0a4b;
+    color: #474044;
     text-decoration: none;
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
@@ -286,20 +265,27 @@ footer{
     display: flex;
     flex-direction: column;
     max-width: 90%;
-}
+  }
+
   .autoresDiv ul li{
     list-style: none;
-    color: #8f0a4b;
+    color: #474044;
     text-decoration: none;
     font-family: "Jost", sans-serif;
     font-weight: 300;
     font-style:normal;
-    font-size: larger;
-    max-width: 90%;
-    
+    font-size:medium;
+    max-width: 90%;    
   }
+
   .autoresDiv ul {
-    max-width: 90%;
+    max-width: 60%;
+  }
+
+  .autoresDiv .autores-largo{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
   }
 
   footer{
@@ -310,8 +296,6 @@ footer{
     font-style:normal;
     font-size: smaller;
     margin-top: 4rem;
-    text-align: center;
-  
+    text-align: center;  
   }
-      
 }
