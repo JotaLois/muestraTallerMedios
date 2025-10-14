@@ -25,7 +25,7 @@ body{
 }
 
 .videoHome{
-  width: 360px;
+  width: 1080px;
   height: auto;
   box-shadow: grey 5px 5px 5px;
   border-radius: 5px;
@@ -217,9 +217,14 @@ footer{
   }
   
   .logoB{
-    width: 200px;
+    width: 300px;
     height: auto;
     margin: 2px;
+  }
+
+  .videoHome{
+    width: 480px;
+    height: auto;
   }
 
   .encabezadoPrincipal{
